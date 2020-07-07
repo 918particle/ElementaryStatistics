@@ -203,6 +203,14 @@ Example 3: You go to the supermarket and purchase three cans of soup:
 \textbf{Create three data sets: one quantitative discrete, one quantitative continuous, and one categorical.}
 \end{frame}
 
+\section{Laboratory Activity}
+
+\begin{frame}{Laboratory Activity}
+Go to the following link and watch the interesting TED talk by Steven Levitt from 2005 about driving safety. \\ \vspace{1cm}
+\url{https://www.ted.com/talks/steven_levitt_surprising_stats_about_child_carseats?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare} \\ \vspace{1cm}
+Answer the questions on the form entitled \alert{Laboratory Exercise 1} on Moodle for this week, and submit them via email: jhanson2@whittier.edu. (This is part of your warm-ups grade...see syllabus).
+\end{frame}
+
 \section{Interactive Questions}
 
 \begin{frame}{Interactive Questions}
@@ -275,12 +283,178 @@ The total number of international students is 52 in the above table.  What propo
 \end{itemize}
 \end{frame}
 
+\section{Other forms of Qualitative Data, Sampling}
+
+\begin{frame}{Other forms of Qualitative Data}
+\begin{enumerate}
+\item Types of categories
+\item Overlapping and non-overlapping categories, missing data
+\item Activity on Pareto charts
+\item Sampling strategies
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Qualitative Data}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/qualitativeData.png}
+\caption{\label{fig:qual} Two types of qualitative data representation.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Qualitative Data}
+\begin{enumerate}
+\item \textbf{Mulitple categories}: Categories can overlap, so when calculating proportions, the percentatge can sum to greater than 100 percent.
+\begin{itemize}
+\item Proportion of first-year students who are female: 56\%
+\item Proportion of students who are male: 44\%
+\item Proportion of students who do not live on campus: 46\%
+\end{itemize}
+\item \textbf{Missing categories}: Categories do not always capture every feature of a population.
+\begin{figure}
+\centering
+\includegraphics[width=5cm]{figures/race.png}
+\end{figure}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Qualitative Data}
+\begin{figure}
+\centering
+\includegraphics[width=6cm]{figures/race2.png}
+\includegraphics[width=6cm]{figures/race3.png}
+\caption{\label{fig:pareto} A Pareto chart is a bar graph that is ordered greatest to least.  This can sometimes illuminate an effect that wasn't obvious.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Qualitative Data}
+\small
+\begin{columns}[T]
+\begin{column}{0.55\textwidth}
+Let's create a Pareto chart from the Whittier College factbook.
+\begin{figure}
+\centering
+\includegraphics[width=4cm]{figures/race4.png}
+\caption{\label{fig:pareto2} The demographic breakdown of Whittier College undergraduate self-reported ethnicity data from 2019-20.}
+\end{figure}
+\end{column}
+\begin{column}{0.45\textwidth}
+\begin{itemize}
+\item Open your copy of Excel, or LibreOffice Calc
+\item Make one column heading entitled \textbf{ETH}
+\item Make one column heading entitled \textbf{N}
+\item Copy the data in Fig. \ref{fig:pareto2} into your columns
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Qualitative Data}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Let's create a Pareto chart from the Whittier College factbook.
+\begin{figure}
+\centering
+\includegraphics[width=4cm]{figures/race4.png}
+\caption{\label{fig:pareto3} The demographic breakdown of Whittier College undergraduate self-reported ethnicity data from 2019-20.}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item Sort the data according to \textbf{N}
+\item Click the menu ``Insert,'' and insert a bar chart
+\end{itemize}
+\begin{figure}
+\centering
+\includegraphics[width=5cm]{figures/race5.png}
+\caption{A Pareto chart of Whittier College ethnicity data.  The sample is the UG as of Fall 2019.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Sampling Strategies}
+\alert{Sampling Strategies:}
+\begin{itemize}
+\item Simple random ... how to generate random numbers? (Good project).
+\item Stratified sampling: pre-defined groups, choose proportionately at random from those groups (choosing at random from Depts.)
+\item Cluster sampling: pre-defined groups, but choose \textit{the groups themselves} at random (choose random Depts.)
+\item Systematic sampling: select every n-th subject in the population to form the sample (assume some ordering, could be random)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Sampling Strategies}
+\textbf{Cool example on random sampling.}  How can you measure the number of fish in a pond?  Catch all the fish?  No way!  Use simple random sampling.
+\begin{enumerate}
+\item Catch $n$ fish, and mark them.
+\item Return one day later, and catch $n$ fish again.
+\item Assume the sample of fish is \textit{simple random}.  Why is this a good or bad assumption?
+\item Measure the number $m$ of marked fish, caught the second day.
+\item The \textit{proportion of total fish that are marked} is $p = m/n$.
+\item But, $p = n/N$, where $N$ is the total...
+\item $N = n/p = n^2/m$. \vspace{0.5cm} \footnote{Proceed to Hawai'i to tag great white sharks...}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Sampling Strategies}
+\textbf{Cool example on random sampling.}  How can you measure the number of fish in a pond?  Catch all the fish?  No way!  Use simple random sampling.
+\begin{enumerate}
+\item With replacement ... keeps the population unchanged, randomness preserved.
+\item Without replacement ... changes the population by 1 with each choice.  Often more convenient and does not matter as long as the sample size is ``large enough.''
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Sampling Strategies}
+\alert{Systematic sampling}, special case: waveform data, time-series data.  Systmatic trends cannot be observed by data sampled insufficiently systematically.
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/stock.png}
+\caption{Example of stock price data.}
+\end{figure}
+\end{frame}
+
+\section{Interactive Questions}
+
+\begin{frame}{Interactive Questions}
+The instructor takes her sample by gathering data on five randomly selected students from each Lake Tahoe Community College math class. The type of sampling she used is
+\begin{itemize}
+\item A: Cluster sampling
+\item B: Stratified sampling
+\item C: Simple random sampling
+\item D: Convenience sampling
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Interactive Questions}
+A study was done to determine the age, number of times per week, and the duration (amount of time) of residents using
+a local park in San Jose. The first house in the neighborhood around the park was selected randomly and then every eighth
+house in the neighborhood around the park was interviewed. The sampling method was:
+\begin{itemize}
+\item A: Simple random
+\item B: Systematic
+\item C: Stratified
+\item D: Cluster
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Interactive Questions}
+Suppose you are working at a shoe company, and you sample the preferences of 5,000 previous customers to inform a new shoe design.  If the response rate is 20 percent, and 300 responses indicated customers prefered leather to rubber insteps, what proportion of the random sample does this represent?
+\begin{itemize}
+\item 30 percent
+\item 20 percent
+\item 20 percent
+\item 10 percent
+\end{itemize}
+
+\end{frame}
+
 \section{Laboratory Activity}
 
-\begin{frame}{Laboratory Activity}
-Go to the following link and watch the interesting TED talk by Steven Levitt from 2005 about driving safety. \\ \vspace{1cm}
-\url{https://www.ted.com/talks/steven_levitt_surprising_stats_about_child_carseats?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare} \\ \vspace{1cm}
-Answer the questions on the form entitled \alert{Laboratory Exercise 1} on Moodle for this week, and submit them via email: jhanson2@whittier.edu. (This is part of your warm-ups grade...see syllabus).
+\begin{frame}
+Go to the following link to watch a TED talk by the one, the only, Malcom Gladwell: \\ \vspace{1cm}
+\url{https://www.ted.com/talks/malcolm_gladwell_choice_happiness_and_spaghetti_sauce?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare} \\ \vspace{1cm}
+Answer the questions on the form entitled \alert{Laboratory Exercise 2} on Moodle for this week, and submit them via Moodle.
 \end{frame}
 
 \section{Conclusion}
