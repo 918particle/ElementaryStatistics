@@ -414,6 +414,14 @@ Let's create a Pareto chart from the Whittier College factbook.
 \end{figure}
 \end{frame}
 
+\section{Laboratory Activity}
+
+\begin{frame}
+Go to the following link to watch a TED talk by the one, the only, Malcom Gladwell: \\ \vspace{1cm}
+\url{https://www.ted.com/talks/malcolm_gladwell_choice_happiness_and_spaghetti_sauce?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare} \\ \vspace{1cm}
+Answer the questions on the form entitled \alert{Laboratory Exercise 2} on Moodle for this week, and submit them via Moodle.
+\end{frame}
+
 \section{Interactive Questions}
 
 \begin{frame}{Interactive Questions}
@@ -449,12 +457,83 @@ Suppose you are working at a shoe company, and you sample the preferences of 5,0
 
 \end{frame}
 
-\section{Laboratory Activity}
+\section{Frequency, Relative Frequency}
 
-\begin{frame}
-Go to the following link to watch a TED talk by the one, the only, Malcom Gladwell: \\ \vspace{1cm}
-\url{https://www.ted.com/talks/malcolm_gladwell_choice_happiness_and_spaghetti_sauce?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare} \\ \vspace{1cm}
-Answer the questions on the form entitled \alert{Laboratory Exercise 2} on Moodle for this week, and submit them via Moodle.
+\begin{frame}{Frequency, Relative Frequency}
+\alert{How frequently do data values occur in the sample?}
+An activity to demonstrate the concept of frequency. \\ \vspace{0.5cm}
+\url{https://phet.colorado.edu/en/simulation/plinko-probability}
+\end{frame}
+
+\begin{frame}{Frequency, Relative Frequency}
+\begin{enumerate}
+\item Begin with the Intro tab to this PhET simulation.
+\item Use the controls at upper right to drop balls through the Plinko system.
+\item Notice how they have \textit{more or less} an equal chance of bouncing to the left or right at each level.
+\item This behavior of being equally likely leads to a variation in the frequency with which objects land in the areas below.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Frequency, Relative Frequency}
+\small
+\begin{enumerate}
+\item Now click the Lab tab at the bottom center of the screen.
+\item Use the controls at right to increase the rows to 26.
+\item Leave the ``binary probability'' set to 0.5, meaning 50\% chance left, 50\% chance right, at each interaction.
+\item We have encountered how to calculate the mean $\bar{x}$ from a data sample.  The mean position of all the balls is given at bottom right.
+\item Use the play button at top right to drop 1,000 balls to form a data sample of positions at the bottom.
+\item When you reach 1000, copy the \textit{bins} (0, ... , 26) and the \textit{frequencies} (the data in the bins) into Excel or LibreOffice Calc.  Put the bin numbers in column A, and the frequencies the adjacent column B.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Frequency, Relative Frequency}
+\small
+\begin{enumerate}
+\item Suppose you want to sum the frequencies.  In a cell below the column of frequency data, type
+\begin{verbatim}
+=SUM(B1:B27)
+\end{verbatim}
+and hit enter.  This assumes that your data is in column B, in cells 1 through 27.
+\item This should be the $N$ value given by the PhET simulation (close to 1000).
+\item In column C, cell 1, type
+\begin{verbatim}
+=B1/N
+\end{verbatim}
+Instead of $N$, though, type the result for $N$ found above.
+\item Click on cell C1, and drag the little black square at the bottom right of the cell down until you reach C27 (repeats the calculation).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Frequency, Relative Frequency}
+\small
+\begin{enumerate}
+\item Column C data are known as \textit{relative frequencies.}  They represent the probability of discovering a data result with the bin value.
+\item If you use the SUM function to sum the relative frequencies, what result is obtained?
+\item What about a ``running total'' of relative frequencies, to keep track of how quickly we approach 100\% of the data?  In cell D1, type
+\begin{verbatim}
+=C1
+\end{verbatim} 
+and in cell D2, type
+\begin{verbatim}
+=C2+D1
+\end{verbatim}
+Click and drag to repeat the calculation until you reach the last cell.  This trick adds the new C value to the running total. Create a plot of bin value versus column D.
+\item Column D is the \textit{cumulative frequency} of the data sample.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Topics from Chapter 1}
+\begin{tcolorbox}[colback=orange!10,colframe=orange!100,title=Mean: Definition 2]
+Let X represent a statistical variable, and $x_i$ represent the data values.  Suppose there are $n_i$ instances of $x_i$, with only $M$ unique values.  The $n_i$ are the \textit{frequencies}, and we can write
+\begin{equation}
+\bar{x} = \frac{1}{N}\sum_i^{M} n_i x_i
+\end{equation}
+Moving the $1/N$ inside the sum, we see that
+\begin{equation}
+\bar{x} = \sum_i^{M} \left(\frac{n_i}{N}\right) x_i = \sum_i^{M} f_i x_i
+\end{equation}
+\end{tcolorbox}
+The fraction $f_i = n_i/N$ are the relative frequencies.  (Professor: do an example).
 \end{frame}
 
 \section{Conclusion}
