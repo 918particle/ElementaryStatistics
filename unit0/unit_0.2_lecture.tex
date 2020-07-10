@@ -113,6 +113,71 @@ Then press \alert{\textbf{control+shift+enter}} to execute on arrays of data and
 \end{verbatim}
 \end{frame}
 
+\begin{frame}[fragile]{Histograms}
+\small
+For data that is appropriately ``stationary,'' we can use histograms to estimate the mean \textit{faster}, since we only have to loop over bins rather than every data sample.  Let $H_i$ represent the counts in a given bin, and $i$ represent the bin sample.  We have:
+\begin{equation}
+\bar{x} = \frac{1}{N}\sum_{i=1}^{M}i H_i 
+\end{equation}
+To obtain the mean in signal \textit{amplitude}, you'll have to convert bin number to amplitude.  \textbf{Professor example.}
+\end{frame}
+
+\begin{frame}[fragile]{Histograms}
+\small
+When is a histogram appropriate?
+\textbf{Note}: There is a distinction between the \textit{process or signal process} and the \textit{the data}.  Just because the data has a given $\bar{x}$ and $s$ does not imply that the signal process has or will continue to have the exact same values of $\mu$ and $\sigma$.  The underlying process could be \textit{non-stationary}.
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/non_stationary.png}
+\caption{\label{fig:non_stationary} Signal processes in (a) and (b) are considered \alert{non-stationary} because one or both of $\mu$ and $\sigma$ depend on time.}
+\end{figure}
+\end{frame}
+
+\section{Interactive Questions}
+
+\begin{frame}{Interactive Questions}
+Which of the following pairs of number have the same \textit{stem}?
+\begin{itemize}
+\item A: 17 and 27
+\item B: 33 and 43
+\item C: 16 and 11
+\item D: -1 and 1
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Interactive Questions}
+How many \textit{leaves} are there for the stems, given the data set? \\
+Data set: 67, 77, 72, 74, 90, 91, 94, 88, 82. \\
+Stems: 6, 7, 8, and 9
+\begin{itemize}
+\item A: 1, 3, 3, 2
+\item B: 1, 3, 2, 3
+\item C: 1, 3, 3, 3
+\item D: 1, 2, 2, 3
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Interactive Questions}
+Consider the following relative frequencies below.  Is the corresponding histogram \textit{normalized?}\\
+Relative frequencies: 0.1, 0.1, 0.25, 0.1, 0.1, 0.05
+\begin{itemize}
+\item A: Yes
+\item B: No
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Interactive Questions}
+What is the \textit{mean} of the histogram data below? \\
+Bins: 0, 2, 4, 6, 8, 10 \\
+Data: 10, 60, 20, 5, 1, 1
+\begin{itemize}
+\item A: 0.98
+\item B: 2.56
+\item A: 4.11
+\item B: 10
+\end{itemize}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Unit 0 Outline}
