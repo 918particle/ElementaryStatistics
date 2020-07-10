@@ -1,0 +1,138 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\title{Elementary Statistics: Math 080}
+\author{Jordan Hanson}
+\institute{Whittier College Department of Physics and Astronomy}
+
+\begin{document}
+\maketitle
+
+\begin{frame}{Unit 0 Outline}
+\begin{enumerate}
+\item Topics from Chapter 1: 1.1, 1.2, 1.3
+\begin{itemize}
+\item What is a statistic?
+\item Probability examples
+\item Data and sampling
+\end{itemize}
+\item Topics from Chapter 2: 2.1 - 2.4, 2.5 - 2.8
+\begin{itemize}
+\item Data visualization
+\item Location of the data in numerical space
+\end{itemize}
+\item Topics from Chapter 3: 3.1, 3.2, 3.3
+\begin{itemize}
+\item Two rules of probability
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\section{Topics from Chapter 2}
+
+\begin{frame}[fragile]{Stemplots}
+\small
+Useful for numbers like \textit{grades}. Most significant digit is the category.
+\begin{table}
+\begin{tabular}{| c | c |}
+\hline
+\hline
+Stem & Leaves \\ \hline
+0 &   \\ \hline
+1 &   \\ \hline
+2 &   \\ \hline
+3 &   \\ \hline
+4 & [3.0] \\ \hline
+5 & [6.0] \\ \hline
+6 & [7.0, 9.0] \\ \hline
+7 & [8.0, 0.0, 8.0, 1.0, 2.0, 5.0, 7.0] \\ \hline
+8 & [8.0, 3.0, 4.0, 6.0, 2.0, 1.0, 2.0, 1.0] \\ \hline
+9 & [8.0, 7.0, 1.0, 4.0] \\ \hline
+\hline
+\end{tabular}
+\caption{A \textit{stemplot} of a grade distribution.}
+\end{table}
+\end{frame}
+
+\begin{frame}[fragile]{Stemplots}
+\small
+Procedure:
+\begin{enumerate}
+\item Identify the approximate order of magnitude of the sample.
+\item Within that order of magnitude, create $\approx 10$ \textit{stems,} corresponding to the base-10 digits.
+\item For each data point, call the non-most significant digits the \textit{leaves} and drop the leaves in the category with the matching leaf.
+\end{enumerate}
+\textbf{Professor example:} What is the stemplot of 
+\begin{verbatim}
+[11, 22, 33, 44, 55, 66]
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Stemplots}
+\small
+Procedure:
+\begin{enumerate}
+\item Identify the approximate order of magnitude of the sample.
+\item Within that order of magnitude, create $\approx 10$ \textit{stems,} corresponding to the base-10 digits.
+\item For each data point, call the non-most significant digits the \textit{leaves} and drop the leaves in the category with the matching leaf.
+\end{enumerate}
+Let's create a stemplot of:
+\begin{enumerate}
+\item Our ages in MATH080
+\item My age and the rest of my department
+\end{enumerate}
+(Stemplots lead in to the topic of histograms)
+\end{frame}
+
+\begin{frame}[fragile]{Histograms}
+\alert{Histograms} are a tool for measuring \textit{probability distributions}.  The inputs are the data points and the corresponding relative frequencies, or plain frequencies. \\ \vspace{0.5cm}
+\textbf{How many textbooks or books did you purchase for school last year?} (Type in the chat).
+\begin{enumerate}
+\item Determine the bins, or \textit{binning}
+\item For each data point, drop it into the appropriate bin
+\item Each time a measurement is dropped into a bin, the \textit{count} increases by 1.
+\item If a histogram displays plain frequencies, it is called \textit{un-normalized.}
+\item If a histogram displays relative frequencies, it is called \textit{normalized.}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Histograms}
+\begin{enumerate}
+\item Histogram of books, by hand
+\item Repeat with Excel/Calc
+\end{enumerate}
+Practice with the FREQUENCY function in Calc/Excel:
+\begin{verbatim}
+=FREQUENCY(A1:A99; B1:B11)
+\end{verbatim}
+Then press \alert{\textbf{control+shift+enter}} to execute on arrays of data and bins.  To \textit{normalize}, input the relative frequencies, or divide frequecies by $N$.  Assume the data is in C column:
+\begin{verbatim}
+=C1/N ...
+\end{verbatim}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Unit 0 Outline}
+\begin{enumerate}
+\item Topics from Chapter 1: 1.1, 1.2, 1.3
+\begin{itemize}
+\item What is a statistic?
+\item Probability examples
+\item Data and sampling
+\end{itemize}
+\item Topics from Chapter 2: 2.1 - 2.4, 2.5 - 2.8
+\begin{itemize}
+\item Data visualization
+\item Location of the data in numerical space
+\end{itemize}
+\item Topics from Chapter 3: 3.1, 3.2, 3.3
+\begin{itemize}
+\item Two rules of probability
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\end{document}
