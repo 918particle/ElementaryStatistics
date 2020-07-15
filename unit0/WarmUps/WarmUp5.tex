@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Warm-Up 4}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Formula Area}
+
+\begin{itemize}
+\item \textit{Median}: The value that separates the lower half of a sorted list of data from the upper half.  It does not have to be one of the data values.
+\item \textit{Quartiles}: numbers that divide the data into fourths, or equal frequency in four bins.
+\item \textit{IQR}: the inter-quartile range is $Q_3 - Q_1$, or the third quartile minus the first quartile.
+\end{itemize}
+
+\section{Locating the Center of the Data}
+
+\begin{enumerate}
+\item Sort the list of GPAs in Tab. \ref{tab:gpa} into \textit{ascending order}. What is the median of the data? \\ \vspace{2cm}
+\item Group the data into \textit{quartiles}, so that one fourth of the sorted data is in each bin.  What is the IQR?  Are there any outlying data points? \\ \vspace{2cm}
+\item Calculate the \textit{cumulative relative frequencies} of the sorted data.  Below what number does 90 percent of the data appear? (This leads into a discussion of the percentiles).
+\end{enumerate}
+
+\begin{table}[hb]
+\centering
+\begin{tabular}{| c | c |}
+\hline \hline
+Student ID & GPA \\ \hline
+A & 3.1 \\ \hline
+B & 3.7 \\ \hline
+C & 2.9 \\ \hline
+D & 3.1 \\ \hline
+E & 3.3 \\ \hline
+F & 3.6 \\ \hline
+G & 2.7 \\ \hline
+H & 3.9 \\ \hline
+I & 2.9 \\ \hline
+J & 3.3 \\ \hline
+K & 3.6 \\ \hline
+I & 4.0 \\ \hline
+\hline
+\end{tabular}
+\caption{\label{tab:gpa} A table of student GPA's for a single semester.}
+\end{table}
+
+\end{document}
