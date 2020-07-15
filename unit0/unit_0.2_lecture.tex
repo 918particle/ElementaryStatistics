@@ -225,6 +225,32 @@ We also think of the left-most column as \textit{time slices}, and then we can f
 \textbf{Graphing time-series to look for trends.} (Make a time-series of the class-size data below). \\ \vspace{6cm}
 \end{frame}
 
+\section{Locating the Center of the Data}
+
+\begin{frame}{Locating the Center of the Data}
+\begin{enumerate}
+\item \textbf{\alert{Median}} - The data value that halves a sorted list of data
+\item \textbf{\alert{Mode}} - The data value with the highest frequency
+\item \textbf{\alert{Mean}} - The average using either definition
+\item \textbf{\alert{Quartiles}} - The values $Q_i$ that divide a sorted list into quarters of equal frequency
+\item \textbf{\alert{IQR}} - $Q_3 - Q_1$
+\item \textbf{\alert{k-th Percentile}} - $i = k/100 (n+1)$, where $i$ is the index of the k-th percentile, and $n$ is the number of data points in a sorted list
+\item \textbf{\alert{Percentile of a value}} - (next slide)
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Locating the Center of the Data}
+An algorithm for finding the percentile of a particular value:
+\begin{itemize}
+\item Order the data from smallest to largest.
+\item x = the number of data values counting from the bottom of the data list up to but not including the data value for which
+you want to find the percentile.
+\item y = the number of data values equal to the data value for which you want to find the percentile.
+\item n = the total number of data.
+\item Calculate: $(x+0.5y)/n \times 100$ and round to nearest integer.
+\end{itemize}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Unit 0 Outline}
