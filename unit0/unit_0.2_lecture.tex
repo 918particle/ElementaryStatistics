@@ -251,6 +251,50 @@ you want to find the percentile.
 \end{itemize}
 \end{frame}
 
+\section{The Spread of the Data}
+
+\begin{frame}[fragile]{Statistics and Probability: The Normal Distribution}
+The \textit{mean}, $\mu$, and \textit{standard deviation}, $\sigma$, of a data set $\lbrace x_i \rbrace$ are defined as
+\begin{align}
+\mu &= \frac{1}{N}\sum_{i=1}^N x_i \\
+\sigma^2 &= \frac{1}{N-1}\sum_{i=1}^N\left(x_i-\mu\right)^2
+\end{align}
+Octave commands:
+\begin{verbatim}
+x = randn(100,1);
+mean(x)
+std(x)
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Statistics and Probability: The Normal Distribution}
+One nice theorem: \textit{The variance is the average of the squares minus the square of the average.}  Let $\langle x \rangle$ represent the average of the quantity or expression $x$.  We have
+\begin{equation}
+\sigma_x^2 = \langle x^2 \rangle - \langle x \rangle^2
+\end{equation}
+Proof: observe on board.
+\end{frame}
+
+\begin{frame}[fragile]{Statistics and Probability: The Normal Distribution}
+\small
+\textbf{Note}: There is a distinction between the \textit{process or signal process} and the \textit{the data}.  Just because the data has a given $\mu$ and $\sigma$ does not imply that the signal process has or will continue to have the exact same values of $\mu$ and $\sigma$.  The underlying process could be \textit{non-stationary}.
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/non_stationary.png}
+\caption{\label{fig:non_stationary2} Signal processes in (a) and (b) are considered \alert{non-stationary} because one or both of $\mu$ and $\sigma$ depend on time.}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Statistics and Probability: The Normal Distribution}
+\small
+\textbf{A histogram} is an object that represents the frequency\footnote{Careful: the word frequency refers to the number of occurences in the data, not a sinusoidal frequency.} of particular values in a signal.  For example, below is a histogram of 256,000 numbers drawn from a probability distribution:
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/hist.png}
+\caption{\label{fig:hist} The histogram contains counts versus sample values.}
+\end{figure}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Unit 0 Outline}

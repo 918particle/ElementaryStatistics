@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Warm-Up 6}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Formula Area}
+
+\begin{itemize}
+\item \textit{Standard deviation, s}:
+\begin{equation}
+s^2 = \frac{1}{n-1}\sum_{i=1}^{N} (x_i - \bar{x})^2
+\end{equation}
+\item In the previous equation, $\bar{x}$ is the mean of the sample of size $n$.
+\end{itemize}
+
+\section{Understanding the Spread of Data}
+
+\begin{enumerate}
+\item The standard deviation describes how far a typical piece of data is from the mean.  First, calculate the mean of the stock prices in Tab. \ref{tab:scores} using Calc or Excel\footnote{By the way, an analysis of Yahoo Finance historical stock prices would make an excellent final project.}. \\ \vspace{1cm}
+\item Next, calculate the difference between each data point and the mean.  Then, square that difference to obtain the deviation-squared. \\ \vspace{1cm}
+\item Finally, sum the deviations-squared, and divide by $n-1$, where $n$ is the number of stocks in the sample.  What result do you find?  If you create a histogram of the data, you can see the meaning of the standard deviation visually.
+\end{enumerate}
+
+\begin{table}[hb]
+\centering
+\begin{tabular}{| c | c |}
+\hline \hline
+Stock Label & Price (USD) \\ \hline
+A & 46.4 \\ \hline
+B & 57.2 \\ \hline
+C & 38.2 \\ \hline
+D & 48.3 \\ \hline
+E & 33.2 \\ \hline
+F & 56.2 \\ \hline
+G & 38.3 \\ \hline
+H & 45.3 \\ \hline
+I & 41.1 \\ \hline
+J & 53.2 \\ \hline
+K & 51.9 \\ \hline
+L & 38.4 \\ \hline
+M & 60.7 \\ \hline
+N & 49.8 \\ \hline
+O & 46.2\\ \hline
+\hline
+\end{tabular}
+\caption{\label{tab:scores} A listing of stock prices in USD for today.}
+\end{table}
+
+\end{document}
