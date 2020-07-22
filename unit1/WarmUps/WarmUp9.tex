@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Warm-Up 9}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Formula Area}
+
+\begin{itemize}
+\item Expectation value of a discrete random variable X: $E[X] = \sum_i p_i x_i$, where $p_i$ is the probability of $X$ taking a value $x_i$.  For a population, we refer to the expectation value or $\mu$.
+\item $E[X] = n p$, where $X$ is a binomially-distributed discrete random variable, the number of successes $x$ in $n$ trials.
+\item Variance of a discrete random variable X: $Var[X] = \sum_i (x_i - \mu)^2 p(x_i)$
+\item $Var(X) = n p q$, where $X$ is a binomially-distributed discrete random variable.  The standard deviation is $\sigma = \sqrt{npq}$.
+\end{itemize}
+
+\section{Concepts from Chapter 4}
+
+\begin{enumerate}
+\item Suppose a basketball player is recording the number of shots made in practice.  He takes 20 shots, records how many were made, and then repeats.  The results were: 15, 12, 11, 15, 16, 9, 11, and 14.
+\begin{itemize}
+\item What is this player's average shots per 20 attempts? \\ \vspace{1cm}
+\item Suppose the shots made per 20 attempts is binomially distributed, and that the average found in the prior exercise is $\mu$.  What is the probability $p$ this player makes a shot in a given attempt? \\ \vspace{1cm}
+\end{itemize}
+\item A stock trader is engaged in a practice called \textit{binary options}, in which she makes a profit if a stock option is valued higher than a preset value by a given date, and loses her money if the stock has not reached that value by a given date.  Consider the stock TelCo in Tab. \ref{tab:stock} below.  (a) Suppose she buys one share and waits until the option contract date arrives (at which point she either earns profit or loses money according to the stock price).  What is the \textbf{expectation value} for her profit? (b) Suppose she buys 100 shares, and the probabilities remain constant.  What will her total profit be in the future?
+\begin{table}
+\centering
+\begin{tabular}{| c | c | c | c |}
+\hline
+\textbf{Outcome} & $x$ & $p(x)$ & $x*p(x)$ \\ \hline \hline
+Success & \$92.00 per share & $0.1$ & ? \\ \hline
+Failure & -\$8.00 per share & $0.9$ & ? \\ \hline
+\hline
+\end{tabular}
+\caption{\label{tab:stock} A table displaying a stock trader's assessment of the odds that TelCo stock will earn her a profit or a loss.}
+\end{table}
+\end{enumerate}
+
+\end{document}
