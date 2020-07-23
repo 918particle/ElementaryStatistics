@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Warm-Up 10}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Formula Area}
+
+\begin{itemize}
+\item Expectation value of a discrete random variable X: $E[X] = \sum_i p_i x_i$, where $p_i$ is the probability of $X$ taking a value $x_i$.  For a population, we refer to the expectation value or $\mu$.
+\item $E[X] = n p$, where $X$ is a binomially-distributed discrete random variable, the number of successes $x$ in $n$ trials.
+\item Variance of a discrete random variable X: $Var[X] = \sum_i (x_i - \mu)^2 p(x_i)$
+\item $Var(X) = n p q$, where $X$ is a binomially-distributed discrete random variable.  The standard deviation is $\sigma = \sqrt{npq}$.
+\end{itemize}
+
+\section{Concepts from Chapter 4}
+
+\begin{enumerate}
+\item Suppose a psychologist is studying whether or not babies have the concept of morality.  Specifically, she wants to know if babies choose a puppet shown to behave ``badly,'' or one that behaves ``well.''  The babies can choose either bad puppet, or good puppet, and there is a run of 100 babies. (a) What would you expect for the results $N_{good}$ and $N_{bad}$ if the babies were choosing randomly? (b) For our discrete random variable $N_{good}$, the number of babies in a run that chose the good puppet, what is $p$ for random selection?  (c) Consider Tab. \ref{tab:stock} below.  Determine the expectation value for the number of babies in a given run that choose good puppet.  The data is based on 10 runs of 10 babies each. (d) Is this data binomially distributed?  Why or why not?
+\begin{table}
+\centering
+\begin{tabular}{| c | c | c | c |}
+\hline
+\textbf{$x$} & $N_{good}$ & $p(x)$ & $x*p(x)$ \\ \hline \hline
+0 & 0 &  &  \\ \hline
+1 & 0 &  &  \\ \hline
+2 & 0 &  &  \\ \hline
+3 & 1 &  &  \\ \hline
+4 & 0 &  &  \\ \hline
+5 & 1 &  &  \\ \hline
+6 & 2 &  &  \\ \hline
+7 & 5 &  &  \\ \hline
+8 & 1 &  &  \\ \hline
+9 & 0 &  &  \\ \hline
+10 & 0 &  &  \\ \hline
+\hline
+\end{tabular}
+\caption{\label{tab:stock} A table displaying a stock trader's assessment of the odds that TelCo stock will earn her a profit or a loss.}
+\end{table}
+\end{enumerate}
+
+\end{document}
