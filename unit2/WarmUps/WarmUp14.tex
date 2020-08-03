@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Warm-Up 14}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Formula Area}
+
+\begin{enumerate}
+\item Normal distribution PDF: $p(x) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp\left( -\frac{1}{2}(x-\mu)^2/\sigma^2 \right)$
+\item The \textit{z-score} of a particular event $x$ drawn from a normal distribution is $z = (x-\mu)/\sigma$.
+\item Probabilities for a normal distribution: $p(-1\sigma < x < 1\sigma) = 0.68$, $p(-2\sigma < x < 2\sigma) = 0.95$, and $p(-3\sigma < x < 3\sigma) = 0.997$.
+\item Notation for normal distribution: $X = N(\mu_x,\sigma_x)$, where $\mu_x$ and $\sigma_x$ are the population mean and standard deviation, respectively.
+\item \textbf{Central Limit Theorem:} Suppose you have a continous random variable X, with mean $\mu_x$ and standard deviation $\sigma_x$.  Suppose you draw $n$ values from its distribution (whatever that distribution is), and calculate the average, $\bar{x}$.  If you repeat this process, the \textit{distribution of the averages} $\bar{x}$ will be $N(\mu_x,\sigma_x/\sqrt{n})$.  That is, the mean of the distribution of averages will be the mean of X, and the standard deviation of the distribution of averages will be the standard deviation of X divided by $\sqrt{n}$.
+\end{enumerate}
+
+\section{Normal Distribution, Central Limit Theorem}
+
+\begin{enumerate}
+\item The GPA of freshmen admitted to Whittier College is normally distributed, with $\mu = 3.0$ and $\sigma = 0.2$.  If we encounter a student with a 4.0 GPA, how many standard deviations above the mean is their GPA?
+\begin{itemize}
+\item A: 2
+\item B: 3
+\item C: 4
+\item D: 5
+\end{itemize}
+\item The GPA of freshmen admitted to Rio Hondo Community College is normally distributed, like $N(2.7,0.5)$.  What GPA is two standard deviations above the mean?
+\begin{itemize}
+\item A: 3.1
+\item B: 3.5
+\item C: 3.7
+\item D: 4.0
+\end{itemize}
+\item Suppose we draw 100 randomly selected Whittier College students, and calculate their average GPA.  We repeat this process 10 times, to get a distribution of averages.  We do not assume that the GPA distribution for \textit{all students} is normal.  However, we do know the mean is 3.0 and the standard deviation is 0.2.  So we have 10 averages, measured from 100 students each.  What is the mean of these 10 averages, and what is the standard deviation of these 10 averages? (Consult the central limit theorem above).
+\end{enumerate}
+
+\end{document}
