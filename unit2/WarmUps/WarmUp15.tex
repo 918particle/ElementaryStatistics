@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Warm-Up 14}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Formula Area}
+
+\begin{enumerate}
+\item Normal distribution PDF: $p(x) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp\left( -\frac{1}{2}(x-\mu)^2/\sigma^2 \right)$
+\item The \textit{z-score} of a particular event $x$ drawn from a normal distribution is $z = (x-\mu)/\sigma$.
+\item Probabilities for a normal distribution: $p(-1\sigma < x < 1\sigma) = 0.68$, $p(-2\sigma < x < 2\sigma) = 0.95$, and $p(-3\sigma < x < 3\sigma) = 0.997$.
+\item Notation for normal distribution: $X = N(\mu_x,\sigma_x)$, where $\mu_x$ and $\sigma_x$ are the population mean and standard deviation, respectively.
+\item \textbf{Central Limit Theorem:} Suppose you have a continous random variable X, with mean $\mu_x$ and standard deviation $\sigma_x$.  Suppose you draw $n$ values from its distribution (whatever that distribution is), and calculate the average, $\bar{x}$.  If you repeat this process, the \textit{distribution of the averages} $\bar{x}$ will be $N(\mu_x,\sigma_x/\sqrt{n})$.  That is, the mean of the distribution of averages will be the mean of X, and the standard deviation of the distribution of averages will be the standard deviation of X divided by $\sqrt{n}$.
+\end{enumerate}
+
+\section{Normal Distribution, Central Limit Theorem}
+
+\begin{enumerate}
+\item According to the Internal Revenue Service, the average length of time for an individual to complete (keep records for, learn, prepare, copy, assemble, and send) IRS Form 1040 is 10.5 hours (without any attached schedules), and the standard deviation is 1.5 hours. The distribution is unknown.  Suppose we sample 64 taxpayers, and compute their mean time-to-complete the 1040, $t$ and their standard deviation, $\sigma_t$.  What are $t$ and $\sigma_t$? \\ \vspace{1cm}
+\item Suppose the world-average marathon time is 145 minutes for professional athletes, and the standard deviation is 15 minutes.  We do not know the underlying distribution of times.  If we collected times of 100 runners' races, (a) What mean should we expect to find across these 100 times? (b) What would the standard deviation of the means be? (c) If a runner in our set of 100 measusrements ran a marathon in 130 minutes, how many standard deviations is this time below the \textit{population} mean? (d) How many standard deviations below the \textit{sample} mean is this time? \\ \vspace{1cm}
+\item The cost of unleaded gasoline in the Bay Area once followed an unknown distribution with a mean of \$4.50 per gallon and a standard deviation of \$0.16 per gallon. (a) How many standard deviations below the mean is the price \$3.94? (b) Sixteen gas stations from the Bay Area are randomly chosen. We are interested in the average cost of gasoline for the 16 gas stations. What is the average of the 16 prices, and what is the standard deviation of the prices? (c) Graph the distribution of all gasoline prices in the Bay Area \textit{assuming} it follows a normal distribution.
+\end{enumerate}
+
+\end{document}

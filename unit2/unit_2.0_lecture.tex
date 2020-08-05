@@ -63,4 +63,66 @@ Suppose we take samples of size $n = 100$ from a large data set that has mean $\
 \end{itemize}
 \end{frame}
 
+\section{Confidence Intervals}
+
+\begin{frame}{Confidence Intervals}
+Suppose we are attempting to measure a population parameter, such as the mean, $\mu$.  This is distinct from the \textit{sample mean,} $\bar{x}$, of a set of data $\left \lbrace x_i \right \rbrace$.
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/samples.png}
+\caption{\label{fig:samp} Let the gray curve refer to a \textit{population} of data.  Let the red curve refer to the \textit{distribution of averages} we find if we repeatedly sample.  The standard deviation of the red curve is smaller because of the Central Limit Theorem: $\sigma_{\bar{x}} = \sigma_{pop}/\sqrt{n}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Confidence Intervals}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/samples.png}
+\caption{\label{fig:samp2} Suppose we decide to communicate the range in which the true mean $\mu$ falls, using our \textit{point estimates} $\bar{x}$.  How should we do that?}
+\end{figure}
+
+A good range: (Mean of $\bar{x}$ distribution minus two standard deviations), to (mean of $\bar{x}$ distribution plus two standard deviations).  \textbf{\alert{This interval has a 90 percent chance of containing $\mu$.}}
+\end{frame}
+
+\begin{frame}{Confidence Intervals}
+\small
+(Mean of $\bar{x} - 2s/\sqrt{n}$), to (Mean of $\bar{x} + 2s/\sqrt{n}$).  \textbf{\alert{This interval has a 90 percent chance of containing $\mu$.}} \\ 
+\begin{itemize}
+\item The error bound for the population mean (EBM) is the ``two standard deviations'' in this example, in which we know the population $\sigma$.
+\item Recall the 68 - 95 - 99.7 rule, and how sample means are normally distributed regardless of the underlying distribution.
+\item We choose the confidence level (CL), and construct the confidence interval for the given CL.
+\item $\alpha = 1 -CL$, probability the confidence interval \textit{does not contain} $\mu$.
+\end{itemize}
+\textbf{Professor example, next slide.}
+\end{frame}
+
+\begin{frame}{Confidence Intervals}
+\textbf{Professor example.} \\ \vspace{7cm}
+\end{frame}
+
+\section{PhET: Illustration of Confidence Intervals}
+
+\begin{frame}{PhET: Confidence Intervals}
+\small
+Go to this link: \url{https://digitalfirst.bfwpub.com/stats_applet/stats_applet_4_ci.html}
+\begin{enumerate}
+\item Select a confidence level (CL) of 95 percent using the slide bar at left.
+\item Set your sample size to 100.  The sample means will be distributed like $N(\mu,\sigma/\sqrt{n})$.  \alert{This example assumes we know $\sigma$, the population standard deviation, but we do not know the mean $\mu$.}
+\item Hit the green Sample 25 button to collect 25 samples of size 100, to get 25 means.
+\item How many of these means fall within two standard deviations $\sigma/\sqrt{100}$ (CL: 95 percent) of the true mean $\mu$?
+\item Repeatedly hit Sample 25, and notice what happens to the percentage at left of sample means that fall within 2 $\sigma/\sqrt{100}$ of $\mu$.
+\end{enumerate}
+\end{frame}
+
+\section{Interactive Questions}
+
+\begin{frame}{Interactive Questions}
+Suppose you wanted to measure the average age of inhabitants of a large neighborhood.  The population mean $\mu$ is unknown, but we can be reasonably certain that our sample standard deviations, $s_1$, $s_2$, ... are approximately $\sigma$, the standard deviation of the population.  So we know that the $\sigma_{age} = 20$ years.  Suppose we collect 100 samples of 16 people apiece.  This means the standard error in our mean $20/\sqrt{16} = 5$ years. \\
+\begin{enumerate}
+\item Suppose the mean of all our data is 70 years.  What is the EBM for two standard deviations in the mean?
+\item How many of our samples should fall within 1 EBM of the true mean?
+\end{enumerate}
+\textbf{\alert{Solve via Breakout Rooms!  Go.}}
+\end{frame}
+
 \end{document}
