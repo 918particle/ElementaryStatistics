@@ -19,7 +19,7 @@ Unit 2 and 3
 \item Confidence Intervals and Hypothesis Testing
 \begin{itemize}
 \item Confidence intervals and data interpretation: 8.1 - 8.4
-\item Rejecting the null hypothesis, types of error, underlying distributions: 9.1 - 9.3, 9.6
+\item Rejecting the null hypothesis, types of error, underlying distributions: 9.1 - 9.3
 \end{itemize}
 \end{enumerate}
 \end{frame}
@@ -123,6 +123,112 @@ Suppose you wanted to measure the average age of inhabitants of a large neighbor
 \item How many of our samples should fall within 1 EBM of the true mean?
 \end{enumerate}
 \textbf{\alert{Solve via Breakout Rooms!  Go.}}
+\end{frame}
+
+\section{Hypothesis Testing}
+
+\begin{frame}{Hypothesis Testing}
+\begin{tcolorbox}[colback=orange!10,colframe=orange!100,title=The Null Hypothesis and Type I and II Errors]
+Let the \textbf{null hypothesis} $H_0$ be a claim, true or false, about a population of data, and $H_a$ represent an alternative.  If samples from the data confirm $H_0$, then we accept $H_0$ as correct.  There are two potential errors: Type I and type II.  They are listed in Tab. \ref{tab:err}.  If $H_0$ and $H_a$ are \textit{complementary}, then rejecting $H_0$ confirms $H_a$.
+\end{tcolorbox}
+\begin{table}
+\begin{tabular}{| c | c | c |}
+\hline
+& $H_0$ is True & $H_0$ is False \\ \hline
+Do not reject $H_0$ & Correct & Type II Error \\ \hline
+Reject $H_0$ & Type I Error & Correct \\ \hline
+\end{tabular}
+\caption{\label{tab:err} Summary of Type I and Type II errors.  The probability of a Type I error is $\alpha$, and the probability of a Type II is $\beta$.}
+\end{table}
+\end{frame}
+
+\begin{frame}{Hypothesis Testing}
+\textbf{Steps for rejection or confirmation of the null hypothesis:} assume underlying distribution is normal via the Central Limit Theorem.
+\begin{enumerate}
+\item The probability of a Type I error is $\alpha$, and the probability of a Type II is $\beta$.  \textit{Choose a value of $\alpha$ that is appropriate.}
+\item Collect the sample of data.  Calculate the mean (or other point estimate of a population parameter).
+\item Determine the probability $p$ that the mean occurred randomly, given the underlying distribution.
+\item If $p < \alpha$, reject $H_0$.  If $p \geq \alpha$, accept $H_0$.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Hypothesis Testing}
+\textbf{Steps for rejection or confirmation of the null hypothesis:} assume underlying distribution is normal via the Central Limit Theorem.\\ \vspace{0.5cm}
+\textbf{Example procedure:} \\ \vspace{5cm}
+\end{frame}
+
+\begin{frame}[fragile]{Hypothesis Testing}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/squarepdf.png}
+\caption{\label{fig:squarepdf} The square-wave signal spends equal time at 0.0 and 1.0, and the probability density function reflects that.}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Hypothesis Testing}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/trianglepdf.png}
+\caption{\label{fig:trianglepdf} The triangle-wave signal spends equal time at all values \textit{between} 0.0 and 1.0, and the probability density function reflects that.}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Hypothesis Testing}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/randnpdf.png}
+\caption{\label{fig:randnpdf} The random noise \textit{usually} spends time near 0.0, but rarely it fluctuates to larger values.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Hypothesis Testing}
+\textbf{Example procedure for signals hidden in noise:} \\ \vspace{5cm}
+\end{frame}
+
+\begin{frame}{Hypothesis Testing}
+When a new drug is created, the pharmaceutical company must subject it to testing before receiving the necessary
+permission from the Food and Drug Administration (FDA) to market the drug. Suppose the null hypothesis is ``the drug creates harmful side effects in 5 percent of patients.'' What is the Type I Error?
+\begin{itemize}
+\item A: To claim the drug harms fewer than 5 percent of patients, and it harms fewer than 5 percent of patients.
+\item B: To claim the drug harms fewer than 5 percent of patients, and it harms more than 5 percent of patients.
+\item C: To claim the drug harms more than 5 percent of patients, and it harms fewer than 5 percent of patients.
+\item D: To claim the drug harms more than 5 percent of patients, and it harms more than 5 percent of patients.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Hypothesis Testing}
+When a new drug is created, the pharmaceutical company must subject it to testing before receiving the necessary
+permission from the Food and Drug Administration (FDA) to market the drug. Suppose the null hypothesis is ``the drug creates harmful side effects in 5 percent of patients.'' What is the Type II Error?
+\begin{itemize}
+\item A: To claim the drug harms fewer than 5 percent of patients, and it harms fewer than 5 percent of patients.
+\item B: To claim the drug harms fewer than 5 percent of patients, and it harms more than 5 percent of patients.
+\item C: To claim the drug harms more than 5 percent of patients, and it harms fewer than 5 percent of patients.
+\item D: To claim the drug harms more than 5 percent of patients, and it harms more than 5 percent of patients.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Hypothesis Testing}
+\small
+Suppose we are presented with the data in Fig. \ref{fig:randnpdf2}.  $H_0$: there will be no outliers more than three standard deviations from the mean in 256 days.  Do you accept $H_0$?  Why or why not?  What is your chosen $\alpha$?
+\begin{figure}
+\centering
+\includegraphics[width=0.65\textwidth,trim=0cm 7cm 0cm 5cm,clip=true]{figures/randn.pdf}
+\caption{\label{fig:randnpdf2} The change in the account, in USD, versus time, in days.}
+\end{figure}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Summary}
+Unit 2 and 3
+\begin{enumerate}
+\item Central Limit Theorem: 7.1
+\item Confidence Intervals and Hypothesis Testing
+\begin{itemize}
+\item Confidence intervals and data interpretation: 8.1 - 8.4
+\item Rejecting the null hypothesis, types of error, underlying distributions: 9.1 - 9.3
+\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \end{document}
